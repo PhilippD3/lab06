@@ -21,9 +21,6 @@ jobs:
       - name: Build Solver
         run: cmake --build ${{github.workspace}}/build
 
-      - name: Build Package
-        run: cmake --build ${{github.workspace}}/build --target package
-
       - name: Build Source Package
         run: cmake --build ${{github.workspace}}/build --target package_source
 
